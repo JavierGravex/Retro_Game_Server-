@@ -108,15 +108,24 @@ The remote gameplay session was successful—my friend was able to connect using
 
 ## Citations
 ### Software Download Pages
--	RetroArch – https://www.retroarch.com
--	Sunshine – https://app.lizardbyte.dev
--	Moonlight – https://moonlight-stream.org
--	Tailscale – https://tailscale.com
--	Ubuntu – https://ubuntu.com/download
+- RetroArch. (n.d.). RetroArch. https://www.retroarch.com
+
+- LizardByte. (n.d.). Sunshine. https://app.lizardbyte.dev
+
+- Moonlight. (n.d.). Moonlight. https://moonlight-stream.org
+
+- Tailscale. (n.d.). Tailscale. https://tailscale.com
+
+- Ubuntu. (n.d.). Ubuntu. https://ubuntu.com/download
+  
 ### Documentation Used
--	RetroArch documentation
--	Sunshine server wiki
--	Tailscale setup guide
+- RetroArch. (n.d.). RetroArch documentation. https://www.retroarch.com
+ (or specific URL to the docs if available)
+- LizardByte. (n.d.). Sunshine server wiki. https://app.lizardbyte.dev
+ (or specific wiki URL)
+- Tailscale. (n.d.). Tailscale setup guide. https://tailscale.com
+ (or specific guide URL)
+
 ### YouTube Tutorials
 -	Ubuntu installation walkthroughs
 -	RetroArch configuration videos
