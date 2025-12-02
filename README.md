@@ -95,7 +95,11 @@ The final result was a fully working RetroArch + Sunshine streaming setup where 
  
 -	Video recording of the remote gaming session.
 
-<video src="videos/Gameplay-1.mp4" width="320" height="240" controls></video>
+https://github.com/user-attachments/assets/27e876dd-9243-48fc-9b92-5058fa29cd37
+
+https://github.com/user-attachments/assets/3089d364-3456-43e8-8d2d-e9a286c2441b
+
+https://github.com/user-attachments/assets/da34c6fa-2c1f-4569-8710-8386868df1fe
 
 
 
