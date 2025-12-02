@@ -95,6 +95,9 @@ The final result was a fully working RetroArch + Sunshine streaming setup where 
  
 -	Video recording of the remote gaming session.
 
+<video src="videos/Gameplay-1.mp4" width="320" height="240" controls></video>
+
+
 
 The remote gameplay session was successful—my friend was able to connect using Moonlight and play a game streamed from my Ubuntu laptop.
 
