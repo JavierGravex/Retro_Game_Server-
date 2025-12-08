@@ -4,7 +4,7 @@ A final project for CSCI 4345
 ## Explanation of the Project
 For this project, I created a remote retro gaming server using an old laptop I found at my house, so I installed Ubuntu on it. The goal was to configure a system that allowed another user to connect over the network and play games through game streaming technology. The system required setting up an operating system, installing emulation software, configuring a game streaming server, resolving network issues, and successfully establishing a peer-to-peer remote gaming session.
 
-The final result was a working RetroArch + Sunshine streaming setup where a remote client connected from another country ( Mexico) to my server, which is in the U.S, using taiscale and through Moonlight, and the client was able to play games hosted on my machine.
+The final result was a working RetroArch + Sunshine streaming setup where a remote client connected from another country ( Mexico) to my server, which is in the U.S, using tailscale and through Moonlight, and the client was able to play games hosted on my machine.
 
 ## Implementation
 
@@ -43,11 +43,13 @@ The final result was a working RetroArch + Sunshine streaming setup where a remo
       After searching forums like Reddit, I found out the issue was my router. Spectrum router does not allow modifying certain network settings, including port forwarding,
       So I needed to find a solution to this problem.
       
-5. Tailscale VPN
-  -	Installed Tailscale on both server and client.
-  -	Created a Tailscale mesh network.
-  -	Used the Tailscale assigned private IP as the Moonlight connection address.
-  -	Verified that the peer showed up correctly in the Tailscale admin console.
+5. Tailscale
+  - I was able to solve the connection issue thanks to Tailscale. My professor mentioned it in class, so I thought it would be a good idea to try it. It works like this:
+   	- The host downloads Tailscale and verifies their computer, then creates an account.
+    - In the account dashboard, you can see an IP address that can be used by the host and anyone they invite to the network.
+    - After that, my friend also got verified, and I gave him access to my network.
+    - He connected to the network from his house, and I hosted from mine.
+ - This made everything much easier and gave us a secure and stable connection.
 
 
 ## Communication Flow
@@ -66,47 +68,46 @@ The final result was a working RetroArch + Sunshine streaming setup where a remo
 -	Sunshine (Game streaming server)
 -	Moonlight (Client application)
 -	Tailscale (VPN mesh networking)
--	Spectrum Router (with limitations that required VPN workaround)
 
 ## Demonstration
-### The demonstration included:
--	Screenshots of Ubuntu installed.
+
+-	### Screenshots of Ubuntu installed.
   ![](img/ubunto_installed_and_running_VM.jpg)
 
--	Installing RetroArch
+-	### Installing RetroArch
   ![](img/installing_retroarch.png)
 
--	RetroArch Installed
+-	### RetroArch Installed
   ![](img/retroarch_installed.jpg)
 
--	Sunshine Installation
+-	### Sunshine Installation
   ![](img/sunshine_instalation.png)
  
--	Sunshine is installed and running
+-	### Sunshine is installed and running
   ![](img/sunshine_installed_and_running.jpg)
 
-- Sunshine up  
+- ### Sunshine up  
   ![](img/sunshine_working.png)
  
-- Sunshine Network Settings
+- ### Sunshine Network Settings
   ![](img/sunshine_networks_settings.png)
 
--	Tailscale Installation
+-	### Tailscale Installation
   ![](img/tailscale_isntallation.png)
 
--	Showing assigned IP.
+-	### Showing assigned IP.
 	![](img/tailscale_working_and_showin_friend_conected.png)
  
--	Friend showing connection to mesh
+-	### Friend showing connection to mesh
   ![](img/Friend_showin_he_conected_to_mesh.jpg)
 
--	Friend showing he is unable to connect to Server
+-	### Friend showing he is unable to connect to Server
   ![](img/friend_showing_server_is_not_accesible.jpg)
  	
--	Friend Showing is accessible now
+-	### Friend Showing is accessible now
   ![](img/Friend_got_acces.jpg)
  
--	Video recording of the remote gaming session.
+-	### Video recording of the remote gaming session.
 
 https://github.com/user-attachments/assets/27e876dd-9243-48fc-9b92-5058fa29cd37
 
@@ -116,8 +117,7 @@ https://github.com/user-attachments/assets/da34c6fa-2c1f-4569-8710-8386868df1fe
 
 
 
-The remote gameplay session was successful, my friend was able to connect using Moonlight and play a game streamed from my Ubuntu laptop.
-
+The remote gameplay session was successful, my friend was able to connect using Moonlight and play a game streamed from my Ubuntu laptop, 
 
 ## Citations
 
