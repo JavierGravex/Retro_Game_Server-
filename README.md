@@ -4,7 +4,7 @@ A final project for CSCI 4345
 ## Explanation of the Project
 For this project, I created a remote retro gaming server using an old laptop I found at my house, so I installed Ubuntu on it. The goal was to configure a system that allowed another user to connect over the network and play games through game streaming technology. The system required setting up an operating system, installing emulation software, configuring a game streaming server, resolving network issues, and successfully establishing a peer-to-peer remote gaming session.
 
-The final result was a working RetroArch + Sunshine streaming setup where a remote client connected from another country ( Mexico) to my server, which is in the U.S, using tailscale and through Moonlight, and the client was able to play games hosted on my machine.
+The final result was a working RetroArch + Sunshine streaming setup where a remote client connected from another country (Mexico) to my server, which is in the U.S, using tailscale and through Moonlight, and the client was able to play games hosted on my machine.
 
 ## Implementation
 
@@ -44,15 +44,17 @@ The final result was a working RetroArch + Sunshine streaming setup where a remo
       So I needed to find a solution to this problem.
       
 5. Tailscale
-  - I was able to solve the connection issue thanks to Tailscale. My professor mentioned it in class, so I thought it would be a good idea to try it. It works like this:
-   	- The host downloads Tailscale and verifies their computer, then creates an account.
-    - In the account dashboard, you can see an IP address that can be used by the host and anyone they invite to the network.
-    - After that, my friend also got verified, and I gave him access to my network.
-    - He connected to the network from his house, and I hosted from mine.
- - This made everything much easier and gave us a secure and stable connection.
+  	- I was able to solve the connection issue thanks to Tailscale. My professor mentioned it in class, so I thought it would be a good idea to try it. It works like this:
+   		- The host downloads Tailscale and verifies their computer, then creates an account.
+    	- In the account dashboard, you can see an IP address that can be used by the host and anyone they invite to the network.
+    	- After that, my friend also got verified, and I gave him access to my network.
+    	- He connected to the network from his house, and I hosted from mine.
+ 	- This made everything much easier and gave us a secure and stable connection.
 
 
 ## Communication Flow
+
+![](img/diagram.png)
 
 1.	Sunshine hosts a game streaming server on the Ubuntu laptop.
 2.	Tailscale creates a direct VPN tunnel between the laptop and the client.
@@ -101,7 +103,7 @@ The final result was a working RetroArch + Sunshine streaming setup where a remo
 -	### Friend showing connection to mesh
   ![](img/Friend_showin_he_conected_to_mesh.jpg)
 
--	### Friend showing he is unable to connect to Server
+-	### Friend showing he is unable to connect to the server
   ![](img/friend_showing_server_is_not_accesible.jpg)
  	
 -	### Friend Showing is accessible now
@@ -116,8 +118,11 @@ https://github.com/user-attachments/assets/3089d364-3456-43e8-8d2d-e9a286c2441b
 https://github.com/user-attachments/assets/da34c6fa-2c1f-4569-8710-8386868df1fe
 
 
+## Reflection and future changes
+- This project successfully created a functional remote retro gaming server. I learned so much about real world networking issues, mostly about how NAT restrictions and ISP limitations can block direct connections. When I couldn't use my router and my public IP, Tailscale became the best option and taught me how mesh VPNs handle secure routing between devices. <br><br>
+  The main issue I couldn’t fully solve was the latency, which increased because all the information had to go through Tailscale before reaching the client. But other than that, the connection remained stable and playable. The project also helped me understand emulator configuration, Linux setup, and how video streaming settings affect performance. <br><br>
+  In the future, I want to test a direct connection, try optimized Sunshine settings, and possibly use Ethernet to reduce latency. I also plan to refine the documentation so the setup is easier to replicate for others.
 
-The remote gameplay session was successful, my friend was able to connect using Moonlight and play a game streamed from my Ubuntu laptop, 
 
 ## Citations
 
